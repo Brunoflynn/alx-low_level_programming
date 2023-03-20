@@ -3,12 +3,14 @@
 /**
  * main - main function
  *
- * Retun: always (0)
+ * Retun: always 0
  */
 
 int main(void)
 {
-	int i, j, k;
+	int i;
+	int j;
+	int k;
 
 	for (i = 0 ; i < 10 ; i++)
 	{
@@ -16,14 +18,16 @@ int main(void)
 		{
 			for (k = 2 ; k < 10 ; k++)
 			{
-				if (i < j && i != j)
-				if (j < k && j != k)
+				if (i < j && j < k)
 				{
 					putchar(i + '0');
 					putchar(j + '0');
 					putchar(k + '0');
-					putchar(',');
-					putchar(' ');
+					if (i + j + k != 24)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
