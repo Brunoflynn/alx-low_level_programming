@@ -13,7 +13,7 @@ int main(void)
 	int pass[100];
 	int i, sum, n;
 
-	sum = 0;	
+	sum = 0;
 
 	srand(time(NULL));
 
@@ -31,5 +31,5 @@ int main(void)
 		}
 	}
 
-	return (0);
+return (0);
 }
