@@ -1,25 +1,13 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * _puts - Outputs a string to the standard output stream.
- *
- * @str: String to output.
- *
- * Return: None.
+ * _puts - prints a string, followed by a new line, to stdout
+ * @str: string to print
  */
 void _puts(char *str)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-}
-
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	_puts("Hello, world!");
-	return (0);
+	while (*str != '\0')
+	{
+		_putchar(*str++);
+	}
+		_putchar('\n');
 }
